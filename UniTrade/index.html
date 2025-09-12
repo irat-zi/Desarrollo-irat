@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Iratze Flores">
+  <meta name="copyright" content="© 2025 UniTrade">
+  <title>UniTrade</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/unitrade.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/16yPb4Ysqo/"><i class="fa fa-facebook-official"></i></a>
+      <a href="https://www.instagram.com/x.irat.fth?igsh=dHFsaWd2ZGs4cjd6"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@x.irat?_t=ZS-8zIVraJiGBD&_r=1"><i class="fa fa-tiktok"></i></a>
+    </div>
+    <a href="#" class="search"><i class="fa fa-search"></i></a>
+  </nav>
+
+
+   <!-- Header principal con carrusel, si desean agregar más imagenes es aquí-->
+  <header class="hero">
+    <div class="hero-carousel">
+      <div class="slide active">
+        <img src="img/Facility.jpg" alt="Imagen 1">
+
+        <!-- AQUÍ ES PARA COLOCAR LO QUE USTEDES QUIEREN QUE VAYA EN CADA IMAGEN-->
+        <div class="hero-content">
+          <h1>U N I T R A D E</h1>
+          <h6 style="background: rgba(0, 0, 0, 0.644);">Bienvenidos a <span>UNITRADE EXPERIENCE</span></h6>
+          <button onclick="toggleModal('subscribe')">CONTACTO</button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="iMG/PB.jpg" alt="Imagen 2">
+        <div class="hero-content">
+          <h1>Experiencias Únicas</h1>
+          <h6 style="background: rgba(0, 0, 0, 0.5);">Un espacio confortable</h6>
+        </div>
+      </div>
+
+    <!--  <div class="slide">
+        <img src="img/homvie2.jpg" alt="Imagen 3">
+        <div class="hero-content">
+          <h1>Cine en Casa</h1>
+          <h6 style="background: rgba(0, 0, 0, 0.5);">Vívelo con Homvie</h6>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   Header principal 
+  <header class="hero">
+    <div class="hero-content">
+      <h1>U N I T R A D E</h1>
+      <h6 style="background: rgba(0, 0, 0, 0.644);">Bienvenidos a <span>UNITRADE EXPERIENCE</span></h6> 
+     <button style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="toggleModal('subscribe')">CONTACTO</button>
+    </div>
+    <img src="img/PB.jpg" alt="UniTrade portada">
+  </header> 
+
+  HEADER CON CAROUSEL-->
+
+
+  <!-- <header class="hero">
+  <div class="hero-carousel">
+    <img src="img/homviehero1.png" class="active" alt="Imagen 1">
+    <img src="img/homviehero2.png" alt="Imagen 2">
+    <img src="img/homviehero3.png" alt="Imagen 3">
+  </div>
+  
+  <div class="hero-content">
+    <h1>H O M V I E</h1>
+    <h6>Bienvenidos a <span>HOMVIE EXPERIENCE</span></h6>
+    <button onclick="toggleModal('subscribe')">CONTACTO</button>
+  </div>
+</header> -->
+
+  <!-- Main content -->
+  <main class="content">
+    <!-- Blog posts -->
+    <section class="blog">
+      <article>
+        <h3>CONOCE LAS INSTALACIONES</h3>
+        <h5>Cada año remodelamos el edificio <span>September 03, 2025</span></h5>
+        <img src="img/Office.jpg" alt="Office" width="100%">
+        <p>¡Jamás te sentirás tan cómodo mientras trabajas!</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo1')">Replies <span>1</span></button>
+        </div>
+        <div id="demo1" class="comments">
+          <p>George: Great company post!</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>UBICACIÓN</h3>
+        <h5>Nos encontramos en una de las mejores zonas de negocios <span>September 03, 2025</span></h5>
+        <img src="img/PDF.jpg" alt="Punto de Fuga" width="100%">
+        <p>Trabajar no debe de ser monótono</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="toggleComments('demo2')">Replies <span>2</span></button>
+        </div>
+        <div id="demo2" class="comments">
+          <p>Amber: Love your blog page!</p>
+          <p>Angie: Love work here!</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <img src="img/People.jpg" alt="People" width="100%">
+        <h4>Visitantes</h4>
+        <p>Un increíble edificio para trabajar</p>
+      </div>
+
+      <div class="card">
+        <h4>Inscríbete</h4>
+        <input type="email" placeholder="Enter e-mail">
+        <button onclick="toggleModal('subscribe')">Subscribe</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="subscribe" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('subscribe')">&times;</span>
+      <h2>SUBSCRIBE</h2>
+      <input type="email" placeholder="Enter e-mail">
+      <button onclick="toggleModal('subscribe')">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> To the top</button>
+    <p>Iratze Flores</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/unitrade.js"></script>
+</body>
+</html>
