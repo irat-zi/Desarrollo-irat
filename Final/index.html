@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundación Raíces Vivas</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="fundation.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">FRV</div>
+        <div>
+          <div class="brand-title">Fundación Raíces Vivas</div>
+          <div class="brand-sub">Educación • Comunidad • Naturaleza</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#mision">Misión</a>
+        <a href="#programas">Programas</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#contacto">Contacto</a>
+        <a class="cta" href="#donar">Donar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div>
+        <h1>Cultivando hoy, floreciendo mañana</h1>
+        <p>La Fundación Raíces Vivas es una organización sin fines de lucro dedicada a la protección del medioambiente y la educación ecológica comunitaria.</p>
+
+        <div class="hero-buttons">
+          <a class="cta" href="#donar">Donar ahora</a>
+          <a class="secondary" href="#programas">Conoce los programas</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Años</div></div>
+          <div class="stat"><div class="stat-num">20k</div><div class="stat-label">Beneficiarios</div></div>
+          <div class="stat"><div class="stat-num">150</div><div class="stat-label">Voluntarios</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-card">
+          <img src="https://images.pexels.com/photos/29458689/pexels-photo-29458689.jpeg" alt="programa 2" width="100%">
+    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión -->
+    <section id="mision">
+      <h2>Nuestra misión</h2>
+      <p class="section-desc">Impulsar proyectos ambientales y educativos que regeneren ecosistemas, fortalezcan la conciencia ecológica y generen oportunidades sostenibles para comunidades locales.</p>
+    </section>
+
+    <!-- Programas -->
+    <section id="programas" class="programs">
+      <h2>Programas destacados</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg" alt="programa 1">
+          <h3>Guardianes Verdes</h3>
+          <p>Programa educativo para niños y adolescentes que enseña reciclaje, huertos urbanos y conservación de la biodiversidad.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/16558358/pexels-photo-16558358.jpeg" alt="programa 2">
+          <h3>Bosques de Futuro</h3>
+          <p>Iniciativa de reforestación comunitaria en zonas deforestadas, involucrando a familias, escuelas y empresas locales.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/3/800/400" alt="programa 3">
+          <h3>Eco-Emprende</h3>
+          <p>Capacitación a jóvenes y mujeres en emprendimientos sostenibles como bioproductos, moda reciclada y energías limpias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias desde API -->
+    <section id="impacto">
+      <h2>Noticias y novedades</h2>
+      <p class="section-desc">Últimas entradas generadas desde una API REST (demo).</p>
+
+      <div id="news" class="news-list">
+        <div class="card">Cargando noticias...</div>
+      </div>
+    </section>
+
+    <!-- Voluntarios desde API -->
+    <section id="voluntarios">
+      <h2>Voluntarios y testimonios</h2>
+      <p class="section-desc">Perfiles de ejemplo suministrados por una API pública.</p>
+
+      <div id="vols" class="vol-grid">
+        <div class="card">Cargando perfiles...</div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contact-box card">
+        <div class="contact-info">
+          <p>📍 CDMX, México<br>✉️ fundacionraicesverdes.org<br>📞 +52 55 1234 5678</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input name="name" placeholder="Nombre" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <small>Este formulario es demo (no envía realmente).</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>Fundación Esperanza • © Iratze Flores <span id="year"></span></div>
+    <div class="footer-links">Política de privacidad · Términos</div>
+  </footer>
+
+  <!-- JS externo -->
+  <script src="fundation.js"></script>
+</body>
+</html>
